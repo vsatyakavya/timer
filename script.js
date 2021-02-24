@@ -35,7 +35,7 @@ function speedRead() {
       bodyEl.textContent =" "
       var imgEl = document.createElement("img");
       imgEl.setAttribute("src","images/image_1.jpg");
-      imgEl.setAttribute("style","height:500px;width:600px")
+      imgEl.setAttribute("style","height:400px;width:600px")
       mainEl.append(imgEl);
       mainEl.setAttribute("style","text-align:center");
 
@@ -50,3 +50,17 @@ function speedRead() {
 }
 
 prepareRead();
+var themeSwitcher = document.querySelector("#theme-switcher");
+var container = document.querySelector(".container");
+var mode = "dark";
+
+themeSwitcher.addEventListener("click", function() {
+  if (mode === "dark") {
+    mode = "light";
+    container.setAttribute("class", "light");
+  }
+  else {
+    mode = "dark";
+    container.setAttribute("class", "dark");
+  }
+});

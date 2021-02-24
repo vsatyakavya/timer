@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +8,26 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container">
-    <h1 class="welcome">Welcome to speed Reader</h1>
-    <h2 id ="countdown"></h2>
-    <h3 id="main"></h3>
+    <div class="container dark">
+        <div class="row">
+            <div class="col">
+                Dark Mode
+            </div>
+            <label class="switch col">
+                <input type="checkbox" id="theme-switcher">
+                <span class="slider round"></span>
+            </label>
+            <div class="col">
+                Light Mode
+            </div>
+        </div>
+        <h1 class="welcome">Welcome to speed Reader</h1>
+        <h2 id="countdown"></h2>
+        <h3 id="main"></h3>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
