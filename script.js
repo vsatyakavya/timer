@@ -35,7 +35,7 @@ function speedRead() {
       bodyEl.textContent =" "
       var imgEl = document.createElement("img");
       imgEl.setAttribute("src","images/image_1.jpg");
-      imgEl.setAttribute("style","height:400px;width:600px")
+      imgEl.setAttribute("style","height:400px;width:600px;border-radius:50px")
       mainEl.append(imgEl);
       mainEl.setAttribute("style","text-align:center");
 
