@@ -32,8 +32,17 @@ function speedRead() {
   var poemInterval = setInterval(function() {
     if (words[i] === undefined) {
       clearInterval(poemInterval);
+      bodyEl.textContent =" "
+      var imgEl = document.createElement("img");
+      imgEl.setAttribute("src","images/image_1.jpg");
+      imgEl.setAttribute("style","height:500px;width:600px")
+      mainEl.append(imgEl);
+      mainEl.setAttribute("style","text-align:center");
+
+
+
     } else {
-      mainEl.textContent = words[i];
+      bodyEl.textContent = words[i];
       i++;
     }
 
